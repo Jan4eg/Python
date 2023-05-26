@@ -11,11 +11,16 @@ n = int(input('Введите m: '))
 m = int(input('Введите n: '))
 k = int(input('Введите k: '))
 
-if k == n * m:
-    print('no')
-elif k < n and k < m:
-    print('no')
-elif k % n !=0 and k % m != 0:
-    print('no')
+# if k == n * m:
+#     print('no')
+# elif k < n and k < m:
+#     print('no')
+# elif k % n !=0 and k % m != 0:
+#     print('no')
+# else:
+#     print('yes')
+
+if (k % n == 0 or k % m == 0) and k < m * n:
+    print("Yes")
 else:
-    print('yes')
+    print("No")

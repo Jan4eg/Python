@@ -11,8 +11,23 @@
 # 385916 -> yes
 # 123456 -> no
 
-stroca = str(120030)
-if int(stroca[0]) + int(stroca[1]) + int(stroca[2]) == int(stroca[3]) + int(stroca[4]) + int(stroca[5]):
-    print('yes')
-else:
-    print('no')
+# stroca = str(120030)
+# if int(stroca[0]) + int(stroca[1]) + int(stroca[2]) == int(stroca[3]) + int(stroca[4]) + int(stroca[5]):
+#     print('yes')
+# else:
+#     print('no')
+
+ticket_num = int(input())
+
+sum_first = 0
+sum_last = 0
+
+while ticket_num:
+    digit = ticket_num % 10
+    if ticket_num > 999:
+        sum_first += digit
+    else: 
+        sum_last += digit
+    ticket_num //= 10
+
+print(f"Счастливый билет: {sum_first == sum_last}")
