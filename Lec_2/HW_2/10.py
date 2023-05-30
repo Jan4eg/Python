@@ -15,3 +15,27 @@ for i in range(n):
         sum_1 += 1
 
 print(min(sum_0, sum_1))
+
+# n = int(input())
+# count = 0
+
+# for i in range(n):
+#     coin = int(input())
+#     if coin:
+#         count += 1
+
+# if count > n // 2:
+#     count = n - count
+
+# print(count)
+
+# n = int(input())
+# count = 0
+
+# for i in range(n):
+#     if int(input()):
+#         count += 1
+
+# print(min(count, n - count))
+
+
