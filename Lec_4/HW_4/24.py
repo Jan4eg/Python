@@ -12,15 +12,39 @@
 # которое может собрать за один заход собирающий модуль, 
 # находясь перед некоторым кустом заданной во входном файле грядки.
 
-from random import randint
+# from random import randint
 
-list_num = [randint(1, 10) for _ in range(int(input()))]
-max = 0
-print(list_num)
+# list_num = [randint(1, 10) for _ in range(int(input()))]
+# max = 0
+# print(list_num)
 
-for i in range(len(list_num)):
-    if (i != len(list_num)-1) and (n:=list_num[i] + list_num[i+1] + list_num[i-1]) > max:
-        max = n
-    elif (n:=list_num[i] + list_num[0] + list_num[i-1]) > max:
-        max = n
-print(max)
+# for i in range(len(list_num)):
+#     if (i != len(list_num)-1) and (n:=list_num[i] + list_num[i+1] + list_num[i-1]) > max:
+#         max = n
+#     elif (n:=list_num[i] + list_num[0] + list_num[i-1]) > max:
+#         max = n
+# print(max)
+
+# n = int(input())
+# bushes = [int(i) for i in input().split()]
+# bush_max = 0
+
+# for i in range(n):
+#     bush_sum = bushes[i - 1] + bushes[i] + bushes[i + 1 if i < n - 1 else 0]
+#     if bush_sum > bush_max:
+#             bush_max = bush_sum
+
+# print(bush_max)
+
+# # ----------------------------------
+
+# n = int(input())
+# bushes = [int(i) for i in input().split()]
+# bush_max = 0
+
+# for i in range(-1, n - 1):
+#     bush_sum = bushes[i - 1] + bushes[i] + bushes[i + 1]
+#     if bush_sum > bush_max:
+#             bush_max = bush_sum
+
+# print(bush_max)
