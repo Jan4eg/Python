@@ -8,7 +8,6 @@ step = int(input())
 lenlst = int(input())
 
 lst = list()
-lst.append(N_0)
 
-for i in range(1, lenlst): lst.insert(i, lst[i-1] + step)
+for i in range(1, lenlst+1): lst.insert(i, N_0 + (i - 1) * step)
 print(*(lst))
