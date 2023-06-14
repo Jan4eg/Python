@@ -11,3 +11,11 @@ lst = list()
 
 for i in range(1, lenlst+1): lst.insert(i, N_0 + (i - 1) * step)
 print(*(lst))
+
+
+# first = int(input())
+# sub = int(input())
+# count = int(input())
+
+# for i in range(count):
+#     print(first + i * sub, end=" ")
